@@ -29,4 +29,7 @@ Route::post('/register', [RegisterController::class, 'register']);
 Route::get('/news', [NewsController::class, 'index'])->name('news.index');
 Route::get('/news/{id}', [NewsController::class, 'show'])->name('news.show');
 
+//API
+Route::get('api/news/{id}', [NewsController::class, 'showByApi']);
+
 
